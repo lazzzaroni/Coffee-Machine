@@ -1,0 +1,27 @@
+type: remote_edu
+custom_name: stage5
+files:
+  - name: main.js
+    visible: true
+    text: |-
+      // Use "input()" to input a line from the user
+      // Use "input(str)" to print some text before requesting input
+      // You will need this in the following stages
+      const input = require('sync-input');
+      let cups = input("Write how many cups of coffee you will need:\n");
+      
+      console.log(`For ${cups} cups of coffee you will need:
+      ${Number(cups) * 200} ml of water
+      ${Number(cups) * 50} ml of milk
+      ${Number(cups) * 15} g of coffee beans`);
+    learner_created: false
+  - name: tests.py
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/17040#comment
+check_profile: hyperskill_node_javascript
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 01 Jun 2022 07:25:25 UTC
+record: 5
